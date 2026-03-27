@@ -20,15 +20,15 @@ def test_resolve_model_openai_shorthand():
 
 
 def test_resolve_model_full_claude_id():
-    provider, model_id = _resolve_model("claude-3-haiku-20240307")
+    provider, model_id = _resolve_model("claude-haiku-4-5")
     assert provider == "anthropic"
-    assert model_id == "claude-3-haiku-20240307"
+    assert model_id == "claude-haiku-4-5"
 
 
 def test_resolve_model_full_gpt_id():
-    provider, model_id = _resolve_model("gpt-4-turbo")
+    provider, model_id = _resolve_model("gpt-5.4-nano")
     assert provider == "openai"
-    assert model_id == "gpt-4-turbo"
+    assert model_id == "gpt-5.4-nano"
 
 
 def test_resolve_model_unsupported_raises():

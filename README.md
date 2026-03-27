@@ -111,7 +111,7 @@ print(prd.title)
 ```
 
 `generate()` accepts `model="claude"` (default), `model="openai"`, or any full model ID
-such as `"claude-3-5-sonnet-20241022"` or `"gpt-4-turbo"`. It always returns:
+such as `"claude-haiku-4-5"` or `"gpt-5.4-nano"`. It always returns:
 
 ```python
 {

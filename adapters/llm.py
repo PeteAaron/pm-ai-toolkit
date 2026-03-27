@@ -1,7 +1,7 @@
 from utils.config import get_api_key, load_env
 
-CLAUDE_DEFAULT_MODEL = "claude-3-5-sonnet-20241022"
-OPENAI_DEFAULT_MODEL = "gpt-4o"
+CLAUDE_DEFAULT_MODEL = "claude-haiku-4-5"
+OPENAI_DEFAULT_MODEL = "gpt-5.4-nano"
 
 
 def generate(
@@ -14,8 +14,8 @@ def generate(
 
     model can be:
       - "claude"  → uses Claude 3.5 Sonnet via Anthropic SDK
-      - "openai"  → uses GPT-4o via OpenAI SDK
-      - a full model ID like "claude-3-haiku-20240307" or "gpt-4-turbo"
+      - "openai"  → uses gpt-5.4-nano via OpenAI SDK
+      - a full model ID like "claude-haiku-4-5" or "gpt-5.4-nano"
 
     Returns:
         {
@@ -50,7 +50,7 @@ def _resolve_model(model: str) -> tuple[str, str]:
         return "openai", model
     raise ValueError(
         f"Cannot determine provider for model='{model}'. "
-        "Use 'claude', 'openai', or a full model ID like 'claude-3-5-sonnet-20241022'."
+        "Use 'claude', 'openai', or a full model ID like 'claude-haiku-4-5'."
     )
 
 

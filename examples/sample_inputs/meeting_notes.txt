@@ -1,0 +1,60 @@
+Q2 Planning Sync — 14 March 2025
+Attendees: Sarah (PM), James (Engineering Lead), Priya (Design), Tom (Data), Marcus (Stakeholder)
+
+---
+
+Sarah: OK let's get started. Main purpose today is to lock down the Q2 priorities and make sure
+we have alignment before the sprint planning next week.
+
+Marcus: Before we do that — I want to flag that the export feature has come up again from the
+enterprise accounts team. Three customers mentioned it on calls this week. We need to treat
+this as high priority.
+
+Sarah: Noted. We had it in the backlog but I'll move it up. James, does the engineering team
+have a sense of the effort?
+
+James: We scoped it last quarter. It's about two sprints — mostly the PDF rendering side.
+There's a dependency on the reporting service that Priya's team hasn't finalised yet.
+
+Priya: The reporting service designs are 80% done. I can have them ready by end of next week.
+That should unblock James's team.
+
+Sarah: OK. Let's decide: export feature is a Q2 priority, targeting release by end of May.
+Priya to finalise reporting service designs by 21 March. James to confirm sprint plan once
+designs are in.
+
+Tom: I want to raise the data quality issue we've been sitting on. The dashboard numbers are
+off for about 12% of enterprise accounts due to a timezone bug. It's been flagged but we
+haven't addressed it.
+
+James: That one is actually a quick fix — maybe a day or two. I can have someone look at it
+this sprint.
+
+Sarah: Decision: fix the timezone bug this sprint. James to assign to Aisha.
+
+Marcus: One more thing — the new onboarding flow. Legal flagged that we're not compliant with
+the new data consent requirements. That can't wait.
+
+Sarah: Agreed. That's not optional. James, what does that take?
+
+James: Two to three days once we have the updated consent copy from Legal. Legal needs to
+provide that first.
+
+Sarah: I'll follow up with Legal today to get the consent copy. Target: onboarding flow
+updated before end of March.
+
+James: One risk I want to flag — we're already at capacity this sprint. If Legal is slow, the
+onboarding fix could slip into the next sprint.
+
+Sarah: Understood. I'll escalate if needed. Priya, anything on your end?
+
+Priya: Just that the mobile designs for the export feature will take an extra week beyond the
+web designs. Don't want that to be a surprise later.
+
+Sarah: Good to know. We'll plan around that. Let's wrap up. Summary of actions:
+Priya: reporting service designs done by 21 March.
+James: assign timezone bug fix to Aisha this sprint, confirm sprint plan once Priya's designs land.
+Sarah: follow up with Legal today on consent copy.
+Everyone: review updated Q2 roadmap doc before next Friday.
+
+Meeting ended 10:47.

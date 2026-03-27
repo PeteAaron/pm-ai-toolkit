@@ -1,0 +1,27 @@
+{
+  "summary": "Q2 priorities were locked down with three key decisions: export feature moved to high priority targeting end-of-May release, timezone bug fix assigned to this sprint, and onboarding flow compliance update targeted for end of March. Dependencies identified include Priya's reporting service designs (due 21 March) unblocking James's export work, and Legal providing updated consent copy to unblock onboarding changes. Mobile designs for export feature will extend one week beyond web designs.",
+  "decisions": [
+    "Export feature is a Q2 priority, targeting release by end of May",
+    "Timezone bug fix to be completed this sprint",
+    "Onboarding flow updated for data consent compliance before end of March"
+  ],
+  "action_items": [
+    "Finalise reporting service designs by 21 March",
+    "Assign timezone bug fix to Aisha this sprint",
+    "Confirm sprint plan once reporting service designs are received",
+    "Follow up with Legal today to obtain updated consent copy",
+    "Review updated Q2 roadmap doc before next Friday"
+  ],
+  "owners": [
+    "Priya",
+    "James",
+    "James",
+    "Sarah",
+    "Everyone"
+  ],
+  "risks": [
+    "Engineering team already at capacity this sprint",
+    "Onboarding flow fix could slip into next sprint if Legal is slow providing consent copy",
+    "Mobile designs for export feature will take an extra week beyond web designs"
+  ]
+}
