@@ -1,0 +1,7 @@
+{
+  "id": "prd-001",
+  "description": "Basic PRD generation from a short feature brief",
+  "input": "We want to add a feature that lets users export their reports as PDF. Our users are analysts who share reports with stakeholders who don't have access to the product.",
+  "expected_fields": ["title", "problem_statement", "user_segments", "goals"],
+  "rubric_ref": "prd_quality"
+}
