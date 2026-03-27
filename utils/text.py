@@ -1,6 +1,15 @@
 import re
 
 
+def extract_json(text: str) -> str:
+    """Strip markdown code fences if the model wrapped the JSON output."""
+    text = text.strip()
+    if text.startswith("```"):
+        lines = text.splitlines()
+        text = "\n".join(lines[1:-1] if lines[-1].strip() == "```" else lines[1:])
+    return text.strip()
+
+
 def clean_text(text: str) -> str:
     """
     Normalise whitespace: collapse multiple spaces/tabs to single space,

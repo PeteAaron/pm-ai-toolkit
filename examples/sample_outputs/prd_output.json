@@ -1,0 +1,28 @@
+{
+  "title": "Export Reports as PDF",
+  "problem_statement": "Enterprise users cannot share reports with stakeholders who lack product access. The only current option is a live link requiring a login, which excludes finance, legal, and exec audiences who will not create accounts.",
+  "user_segments": [
+    "Analysts and ops managers at mid-market and enterprise accounts",
+    "Internal stakeholders (finance, legal, execs) who need to consume reports without a product login"
+  ],
+  "goals": [
+    "Enable report export as a downloadable PDF that preserves layout, charts, and data tables",
+    "Reduce friction for sharing reports with non-product users",
+    "Unblock renewal conversations with enterprise accounts where export is a stated requirement"
+  ],
+  "assumptions": [
+    "Web-only export ships first; mobile PDF export follows in a later iteration",
+    "PDF rendering is handled server-side, not client-side",
+    "The reporting service design (dependency) will be finalised before engineering begins"
+  ],
+  "risks": [
+    "Large data tables may produce oversized PDF files — storage and delivery approach not yet decided",
+    "Mobile report layout is still in design; export may not support mobile layouts at launch",
+    "Premium vs. all-plans pricing decision not yet made — could affect scope and rollout timing"
+  ],
+  "open_questions": [
+    "Should PDF export be a premium feature or available on all plans?",
+    "What is the maximum acceptable file size, and how will large exports be handled?",
+    "Should the PDF include a footer with account name and date range by default, or make it configurable?"
+  ]
+}

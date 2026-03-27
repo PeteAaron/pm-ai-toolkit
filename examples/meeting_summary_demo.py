@@ -21,7 +21,7 @@ sys.path.insert(0, str(REPO_ROOT))
 from adapters.llm import generate
 from schemas.meeting import MeetingSummary
 from utils.files import load_file
-from utils.text import clean_text
+from utils.text import clean_text, extract_json
 
 PROMPT_FILE = REPO_ROOT / "prompts" / "meeting_summariser.md"
 DEFAULT_INPUT = REPO_ROOT / "examples" / "sample_inputs" / "meeting_notes.txt"
@@ -33,15 +33,6 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--input", default=str(DEFAULT_INPUT), help="Path to transcript file")
     parser.add_argument("--save", action="store_true", help="Save output to sample_outputs/")
     return parser.parse_args()
-
-
-def extract_json(text: str) -> str:
-    """Strip markdown code fences if the model wrapped the JSON."""
-    text = text.strip()
-    if text.startswith("```"):
-        lines = text.splitlines()
-        text = "\n".join(lines[1:-1] if lines[-1].strip() == "```" else lines[1:])
-    return text.strip()
 
 
 def render(summary: MeetingSummary) -> str:
